@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pig Dice</title>
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href="css/styles.css" rel="stylesheet" type="text/css">
-      <script src="js/jquery-3.3.1.js"></script>
-      <script src="js/scripts.js"></script>
+    <title>Pig Dice Wars</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body class="page1">
     <div class="container">
-      <h1>PIG DICE WARS</h1>
-       <form id="names">
-         <input type="text" label-for="Player 1"></input>
-         <input type="text" label-for="Player 2"></input>
-
-      <div class="row">
-        <div class="col-md-6"><h2 class="player1">PLAYER 1</h2></div>
-            <div class="col-md-6"><h2 class="player2">PLAYER 2</h2></div>
+    <div class="jumbotron">
+      <h1 class="heading">PIG DICE WARS</h1>
+      <div class="well">
+        <p class="heading">WELCOME PLAYER(S)</p>
+      </div>
+      <h2 class="bg-danger">How To Play</h2>
+        <p>If you're like me and have no idea what Pig Dice is, don't worry, I got you!</p>
+          <ol>
+            <li>Enter your names in the empty 'Player 1' and 'Player 2' fields.</li>
+            <li>Player 1 should begin by clicking 'Roll' and decide whether to keep rolling or to click 'Hold' to preserve the current points.
+            <li>If the current player clicks hold, then it becomes the next player's turn.
+          </ol>
+      <h2 class="bg-danger">Game Objective</h2>
+        <p>The objective of the game is to reach 100 points first. So he/she who gets 100 points first it the winner of that round.</p>
+      <h2 class="bg-danger">Scoresheet:</h2>
+        <p>Both players are allowed to make any number of rolls in each turn. After each roll the dice value is added to their score for that turn. After each roll player can decide whether to stop rolling (hold) and claim the total turn score or continue rolling. If they roll a 1 then they lose all points scored in a particular turn and the turn is then passed to the opponent. This has no impact on their overall score. If players decide to stop rolling (hold), they get the points scored so far which is added to their overall score.</p>
+      <div class="panel">
+        <p>Click "Play" to begin</p>
+        <a href="new-game.html"><button id="btn-play">PLAY!</button></a>
       </div>
 
-
-
-
-
-
-
-
-
+    </div>
 
 
 
