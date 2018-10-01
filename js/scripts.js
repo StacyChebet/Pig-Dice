@@ -70,9 +70,18 @@ $(document).ready (function () {
     });
    $("#Hold1").click(function(){
        hold(play1, totalScore)
-       console.log(p1)
+       console.log(play1)
        $(".ts1").text(play1.score);
    });
+   $("#Roll2").click(function(){
+     diceValue();
+    });
+    $("#Hold2").click(function(){
+     hold(play2, totalScore);
+     $("#ts2").text(play2.score);
+     console.log(play2)
+    });
+});
 
 
 
