@@ -18,3 +18,22 @@
 #names {
   visibility: visible;
 }
+.page2 {
+  background-image: url("../images/bck3.jpg");
+  background-size: cover;
+  font-size: 20px;
+}
+#p1 {
+color: red;
+font-weight: bolder;
+}
+#p2 {
+color: red;
+font-weight: bolder;
+}
+.score1 {
+  color: red;
+}
+.score2 {
+  color: red;
+}
