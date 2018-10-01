@@ -26,15 +26,20 @@ var totalScore= 0;
     return totalScore
     }
     function hold(Player,score){
-   Player.addScore(score);
+   User.addScore(score);
    totalScore=0;
    return true
     }
  function getPlayers(new1, new2){
-   play1=new Player(new1);
-   play2=new Player(new2);
+   firstPlayer=new User(new1);
+   secondPlayer=new User(new2);
     }
 
+  User.prototype.win=function(score){
+    if( totalScore => 100){
+      alert(this.name +"has won!");
+    }
+  }
 
 
 
@@ -70,37 +75,16 @@ $(document).ready (function () {
     });
    $("#Hold1").click(function(){
        hold(play1, totalScore)
-       console.log(play1)
-       $(".ts1").text(play1.score);
+       console.log(firstPlayer)
+       $(".ts1").text(firstPlayer.score);
    });
    $("#Roll2").click(function(){
      diceValue();
     });
     $("#Hold2").click(function(){
      hold(play2, totalScore);
-     $("#ts2").text(play2.score);
-     console.log(play2)
+     $("#ts2").text(secondPlayer.score);
+     console.log(secondPlayer)
     });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  });
 });
